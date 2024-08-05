@@ -5,10 +5,13 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
-    background-color: #2d572c;
+    background-color: rgba(45, 87, 44, 0.9);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -18,7 +21,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #388e3c;
+    background-color: rgba(56, 142, 60, 0.9);
     border-radius: 20px;
     margin: 10px 20px;
 }
@@ -39,36 +42,80 @@ nav a:hover {
 .container {
     padding: 20px;
     margin: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero {
-    background-color: #4caf50;
+    background-color: rgba(76, 175, 80, 0.9);
     color: #fff;
     padding: 50px 20px;
     text-align: center;
     border-radius: 20px;
 }
 
-.services,
-.about,
-.contact {
-    margin: 20px 0;
+.quote-container {
+    position: relative;
+    height: 300px;
+    /* Adjust height as needed */
+    margin: 20px;
+    background: none;
+}
+
+.quote-boxes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.quote-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #2d572c;
+    border-radius: 10px;
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-style: italic;
+    flex: 0 1 auto;
+}
+
+.projects {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    /* Reduced padding to eliminate empty space inside */
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #2d572c;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #2d572c;
+    background-color: rgba(45, 87, 44, 0.9);
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 40px;
+    /* Added margin to create space below the white box */
     border-radius: 20px 20px 0 0;
+}
+
+.hide-nav {
+    display: none;
 }
